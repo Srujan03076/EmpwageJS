@@ -41,7 +41,7 @@ default:
 let empWage=empHrs*WAGE_PER_HR;
 console.log("Daily Wage : "+empWage);
 
-/UC3 to use function in the employee wage to get emphours 
+//UC3 to use function in the employee wage to get emphours 
 const IS_PART_TIME=1;
 const IS_FULL_TIME=2;
 const PART_TIME_HRS=4;
@@ -92,3 +92,4 @@ function getWorkinghours(empCheck)
             return 0;
     }
 }
+
