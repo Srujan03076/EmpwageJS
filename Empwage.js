@@ -114,3 +114,29 @@ while(totalEmpHrs<=MAX_HRS_IN_MONTH && totalWorkingDays<NUM_OF_WORKING_DAYS)
 }
 let empWage3=totalEmpHrs*WAGE_PER_HR;
 console.log("UC5-Total number of days : "+ totalWorkingDays + " Total Hours : "+totalEmpHrs + " Total Employee Wage : "+empWage3);
+
+
+//UC6 Store dailywage along with total wage
+function calculateDailyWage(empHrs) 
+{
+  return empHrs * WAGE_PER_HR;
+}
+
+let empDailyWageArray = new Array();
+let empDailyWageMap=new Map();
+let empDailyHours=new Map();
+let empDailyWageAndHr=new Array();
+let totalEmpHrs1=0;
+let totalWorkingDays1=0;
+while (totalEmpHrs1 <= MAX_HRS_IN_MONTH && totalWorkingDays1 < NUM_OF_WORKING_DAYS)
+{
+  totalWorkingDays1++;
+  let empCheck1 = Math.floor(Math.random() * 10) % 3;
+  let empHrs1=getWorkinghours(empCheck1);
+  empDailyHours.set(totalWorkingDays1,empHrs1); //Uc 9
+  let empwage1=calculateDailyWage(empHrs1);
+  totalEmpHrs1 += empHrs1;
+  empDailyWageArray.push(empwage1);
+}
+let empWage4 = calculateDailyWage(totalEmpHrs);
+console.log("Uc6-Total Days : " +totalWorkingDays1 +" Total Hours : " +totalEmpHrs +" Emp Wage : " +empWage3);
