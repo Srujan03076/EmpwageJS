@@ -93,3 +93,11 @@ function getWorkinghours(empCheck)
     }
 }
 
+//UC4 to calculate wage for a month by ,for loop statement
+for(let day = 0;day<NUM_OF_WORKING_DAYS;day++)
+{
+    let empCheck=Math.floor(Math.random()*10)%3;
+    empHrs+=getWorkinghours(empCheck);
+}
+let empWage=empHrs*WAGE_PER_HR;
+console.log("Uc4-Total Employee working Hours :"+empHrs+" Total Employee wage Wage : "+empWage);
