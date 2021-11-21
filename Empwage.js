@@ -69,6 +69,7 @@ let empCheck=Math.floor(Math.random()*10)%3;
 empHrs=getWorkinghours(empCheck);
 let empWage=empHrs * WAGE_PER_HR;
 console.log("Employee Wage: "+ empWage);
+
 //Declaring constants, variables
 const IS_PART_TIME=1;
 const IS_FULL_TIME=2;
